@@ -20,27 +20,21 @@ ul {
     padding-left: 0;
 }
 
-.container, .container-header {
+.container {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
+    margin: 0 auto;
 }
 
-img {
+.images {
     display: block;
 }
 
 /* top line */
+
 .header {
     border-bottom: 1px solid #e7e9fc;
-}
-
-.container-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .logo-web {
@@ -52,6 +46,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
+    padding: 24px 0;
 }
 
 .logo-studio {
@@ -64,6 +59,7 @@ img {
     align-items: center;
     gap: 40px;
     padding: 24px 0;
+    margin-right: 0;
 }
 
 .nav {
@@ -73,7 +69,6 @@ img {
     letter-spacing: 0.02em;
 }
 
-
 .nav:hover,
 .nav:focus {
     color: #404BBF;
@@ -82,8 +77,10 @@ img {
 .address {
     display: flex;
     flex-direction: row;
+    justify-content: right;
     gap: 40px;
     padding: 24px 0;
+    margin-right: 0;
 }
 
 .address-item {
@@ -101,6 +98,7 @@ img {
 }
 
 /* title and button */
+
 .title {
     font-size: 56px;
     font-weight: 700;
@@ -114,7 +112,12 @@ img {
 }
 
 .button {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
     background-color: #4D5AE5;
+    border-radius: 4px;
     cursor: pointer;
     color: #FFFFFF;
     font-size: 16px;
@@ -122,17 +125,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.04em;
     font-family: "Roboto", sans-serif;
-    padding: 16px 32px;
-    border-radius: 4px;
-}
-
-.button-item {
-    display: block;
-    justify-content: center;
-    min-width: 169px;
-    height: 56px;
-    border: none;
-    padding-bottom: 188px;
 }
 
 .button:hover,
@@ -146,12 +138,40 @@ img {
 }
 
 /* about */
+
 .about {
     padding: 120px 0;
 }
 
+.visually-hidden {
+    display: none;
+}
+
+.about-card {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .about-list {
     width: calc((100% - 72px) / 4);
+}
+
+.about-list-last {
+    margin-right: 0;
+}
+
+.title-item,
+.title-item-team,
+.title-item-portfolio {
+    color: #2e2f42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .about-title, .team-title, .portfolio-title {
@@ -163,16 +183,6 @@ img {
     color: #2e2f42;
 }
 
-.title-item, .title-item-team,
-.title-item-portfolio {
-    color: #2e2f42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-}
-
 .about-contant, .about-contant-team,
 .about-contant-portfolio {
     color: #434455;
@@ -181,24 +191,15 @@ img {
     letter-spacing: 0.02em;
 }
 
-.about-card {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
 /* Our team */
 
 .background-team {
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 
-.team-list {
-    background-color: #FFFFFF;
-    display: block;
-    margin-bottom: 120px;
+.team-title {
+    margin-bottom: 72px;
 }
 
 .team-card {
@@ -208,64 +209,67 @@ img {
     justify-content: center;
 }
 
-.images {
-    display: flex;
+.team-list {
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
-.team-title {
-    display: block;
-    padding-top: 120px;
-    padding-bottom: 72px;
+.name-card {
+    padding: 32px 0;
 }
 
 .title-item-team {
     text-align: center;
-    padding-top: 32px;
+    margin-bottom: 8px;
     margin: 0;
 }
 
 .about-contant-team {
     text-align: center;
-    padding-top: 8px;
-    padding-bottom: 32px;
 }
 
 /* portfolio */
+
+.portfolio {
+    padding: 120px 0;
+}
+
 .portfolio-title {
-    display: block;
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .portfolio-card {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
     justify-content: center;
 }
 
-.title-item-portfolio {
-    padding-top: 32px;
-    border-right: 1px solid #E7E9FC;
-    border-left: 1px solid #E7E9FC;
+.portfolio-list {
+    width: calc((100% - 48px) / 3);
 }
 
-.about-contant-portfolio {
-    padding-top: 8px;
-    border-right: 1px solid #E7E9FC;
-    border-bottom: 1px solid #E7E9FC;
-    border-left: 1px solid #E7E9FC;
-    padding-bottom: 32px;
-    margin-bottom: 48px;
+.name-app {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.title-item-portfolio {
+    margin-bottom: 8px;
 }
 
 /* footer */
+
 .background-footer {
     background-color: #2E2F42;
-    margin-top: 120px;
+    padding: 100px 0;
 }
 
 .logo-web-footer {
+    display: inline-block;
+    margin-bottom: 16px;
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -273,10 +277,6 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: flex;
-    padding-top: 101.5px;
-    padding-bottom: 16px;
-    justify-content: flex-start;
 }
 
 .logo-studio-footer {
@@ -290,9 +290,9 @@ img {
 }
 
 .text-footer {
+    max-width: 264px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
-    padding-bottom: 100px;
 }
