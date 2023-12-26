@@ -37,6 +37,13 @@ ul {
     border-bottom: 1px solid #e7e9fc;
 }
 
+.top-line {
+    display: flex;
+    flex-direction: row;
+    padding: 24px 0;
+    justify-content: space-between;
+}
+
 .logo-web {
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
@@ -46,7 +53,6 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
-    padding: 24px 0;
 }
 
 .logo-studio {
@@ -56,10 +62,7 @@ ul {
 .menu {
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 40px;
-    padding: 24px 0;
-    margin-right: 0;
 }
 
 .nav {
@@ -77,10 +80,7 @@ ul {
 .address {
     display: flex;
     flex-direction: row;
-    justify-content: right;
     gap: 40px;
-    padding: 24px 0;
-    margin-right: 0;
 }
 
 .address-item {
@@ -107,7 +107,6 @@ ul {
     text-align: center;
     color: #FFFFFF;
     display: block;
-    padding: 188px 0;
     max-width: 496px;
 }
 
@@ -135,6 +134,7 @@ ul {
 
 .background-title {
     background-color: #2E2F42;
+    padding: 188px 0;
 }
 
 /* about */
@@ -159,10 +159,6 @@ ul {
     width: calc((100% - 72px) / 4);
 }
 
-.about-list-last {
-    margin-right: 0;
-}
-
 .title-item,
 .title-item-team,
 .title-item-portfolio {
@@ -172,6 +168,10 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+}
+
+.about-title {
+    display: none;
 }
 
 .about-title, .team-title, .portfolio-title {
@@ -221,7 +221,6 @@ ul {
 .title-item-team {
     text-align: center;
     margin-bottom: 8px;
-    margin: 0;
 }
 
 .about-contant-team {
