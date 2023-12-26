@@ -37,13 +37,6 @@ ul {
     border-bottom: 1px solid #e7e9fc;
 }
 
-.top-line {
-    display: flex;
-    flex-direction: row;
-    padding: 24px 0;
-    justify-content: space-between;
-}
-
 .logo-web {
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
@@ -62,6 +55,7 @@ ul {
 .menu {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 40px;
 }
 
@@ -143,10 +137,6 @@ ul {
     padding: 120px 0;
 }
 
-.visually-hidden {
-    display: none;
-}
-
 .about-card {
     display: flex;
     flex-direction: row;
@@ -171,8 +161,10 @@ ul {
 }
 
 .about-title {
-    display: none;
+    visibility: hidden;
 }
+
+[hidden] {display: none;}
 
 .about-title, .team-title, .portfolio-title {
     font-size: 36px;
