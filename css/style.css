@@ -55,8 +55,9 @@ ul {
 .menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .nav {
@@ -74,7 +75,7 @@ ul {
 .address {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    justify-content: right;
 }
 
 .address-item {
@@ -84,6 +85,7 @@ ul {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #434455;
+    margin-right: 40px;
 }
 
 .address-item:hover,
