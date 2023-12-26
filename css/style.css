@@ -171,10 +171,8 @@ ul {
 }
 
 .about-title {
-    visibility: hidden;
+    display: none;
 }
-
-[hidden] {display: none;}
 
 .about-title, .team-title, .portfolio-title {
     font-size: 36px;
