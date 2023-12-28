@@ -58,7 +58,6 @@ ul {
 
 .menu {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -88,7 +87,6 @@ ul {
 
 .address-item {
     display: flex;
-    flex-direction: row;
     gap: 40px;
 }
 
@@ -157,7 +155,6 @@ ul {
 
 .about-card {
     display: flex;
-    flex-direction: row;
     gap: 24px;
 }
 
@@ -218,7 +215,6 @@ ul {
 
 .team-card {
     display: flex;
-    flex-direction: row;
     gap: 24px;
     justify-content: center;
 }
